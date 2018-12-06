@@ -54,8 +54,8 @@ user_pass = browser.find_element_by_id('user_pass')
 rememberme = browser.find_element_by_id('rememberme')
 wp_submit = browser.find_element_by_id('wp-submit')
 
-user_login.send_keys('')
-user_pass.send_keys('')
+user_login.send_keys(username)
+user_pass.send_keys(password)
 rememberme.send_keys('forever')
 wp_submit.click()
 
